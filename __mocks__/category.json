@@ -1,0 +1,28 @@
+{
+  "id": 11,
+  "name": "fern",
+  "createdAt": "2023-01-11T10:53:05.801Z",
+  "updatedAt": "2023-01-11T10:54:30.059Z",
+  "publishedAt": "2023-01-11T10:53:07.416Z",
+  "title": "Ferns",
+  "rank": 0,
+  "image": {
+    "id": 23,
+    "name": "6.png",
+    "alternativeText": null,
+    "caption": null,
+    "width": 116,
+    "height": 126,
+    "formats": null,
+    "hash": "6_edbcc6988a",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 8.24,
+    "url": "https://cms-cdn.plantapp.app/6_edbcc6988a/6_edbcc6988a.png",
+    "previewUrl": null,
+    "provider": "@strapi-community/strapi-provider-upload-google-cloud-storage",
+    "provider_metadata": null,
+    "createdAt": "2023-01-11T10:44:46.151Z",
+    "updatedAt": "2023-01-11T10:44:46.151Z"
+  }
+}

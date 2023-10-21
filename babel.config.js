@@ -7,6 +7,7 @@ module.exports = {
         alias: {
           '@components': './src/components',
           '@icons': './src/assets/icons',
+          '@types': './src/types',
         },
       },
     ],
