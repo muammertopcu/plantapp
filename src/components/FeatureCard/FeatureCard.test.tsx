@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
 import FeatureCard from './FeatureCard';
-import {Scanner} from '../../assets/Icons';
+import {Scanner} from '@icons';
 
 describe('FeatureCard unit tests', () => {
   it('should render with props', () => {
