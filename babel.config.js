@@ -8,6 +8,7 @@ module.exports = {
           '@components': './src/components',
           '@icons': './src/assets/icons',
           '@types': './src/types',
+          '@pages': './src/pages',
         },
       },
     ],
