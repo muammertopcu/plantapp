@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import OnboardNavigator from './OnboardNavigator';
-import {Home} from '@pages';
+import MainNavigator from './MainNavigator';
 import {useSelector} from 'react-redux';
 import {RootState} from '../store/store';
 
@@ -26,7 +26,7 @@ const Router = () => {
           />
         )}
 
-        <Stack.Screen name={'Home'} component={Home} />
+        <Stack.Screen name={'MainNavigator'} component={MainNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -51,7 +51,7 @@ const Paywall = ({navigation}: PaywallProps) => {
 
   const closeHandler = () => {
     dispatch(setOnboardingStatus(false));
-    navigation.navigate('Home');
+    navigation.navigate('MainNavigator');
   };
 
   return (

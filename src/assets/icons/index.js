@@ -3,3 +3,8 @@ export {default as Speedometer} from './Speedometer';
 export {default as Herbal} from './Herbal';
 export {default as Search} from './Search';
 export {default as Close} from './Close';
+export {default as HomeIcon} from './HomeIcon';
+export {default as GardenIcon} from './GardenIcon';
+export {default as DiagnoseIcon} from './DiagnoseIcon';
+export {default as ProfileIcon} from './ProfileIcon';
+export {default as ScanIcon} from './ScanIcon';
