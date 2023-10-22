@@ -3,22 +3,28 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import OnboardNavigator from './OnboardNavigator';
 import {Home} from '@pages';
+import {useSelector} from 'react-redux';
+import {RootState} from '../store/store';
 
 const Stack = createNativeStackNavigator();
 
 const Router = () => {
+  const {isOnboarding} = useSelector(
+    (state: RootState) => state.onboardingSlice,
+  );
+
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Group
-          screenOptions={{
-            headerShown: false,
-          }}>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}>
+        {isOnboarding && (
           <Stack.Screen
             name={'OnboardNavigator'}
             component={OnboardNavigator}
           />
-        </Stack.Group>
+        )}
 
         <Stack.Screen name={'Home'} component={Home} />
       </Stack.Navigator>

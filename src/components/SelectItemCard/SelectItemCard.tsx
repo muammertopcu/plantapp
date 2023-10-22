@@ -17,7 +17,7 @@ const DiscountBadge = ({discount}: DiscountBadgeProps) => {
 interface SelectItemCardProps extends PressableProps {
   title: string;
   description: string;
-  discount?: number;
+  discount?: number | null;
   selected?: boolean;
 }
 
