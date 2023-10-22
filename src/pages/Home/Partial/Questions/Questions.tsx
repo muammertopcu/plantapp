@@ -4,8 +4,10 @@ import {FlatList, Text, View} from 'react-native';
 import {Question} from '@types';
 import {QuestionCard, SkeletonCard} from '@components';
 import styles from './Questions.styles';
+import {NavigationProp, useNavigation} from '@react-navigation/native';
 
 const Questions = () => {
+  const navigation = useNavigation<NavigationProp<any>>();
   const {data, isLoading} = useGetQuestionsQuery();
 
   if (isLoading) {
@@ -26,6 +28,10 @@ const Questions = () => {
     );
   }
 
+  const pressHandler = (uri: string) => {
+    navigation.navigate('WebView', {uri});
+  };
+
   const questions = data as Question[];
 
   return (
@@ -34,7 +40,9 @@ const Questions = () => {
       <FlatList
         data={questions}
         horizontal={true}
-        renderItem={({item}) => <QuestionCard data={item} />}
+        renderItem={({item}) => (
+          <QuestionCard data={item} onPress={() => pressHandler(item.uri)} />
+        )}
         keyExtractor={item => item.id.toString()}
       />
     </View>

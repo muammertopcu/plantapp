@@ -5,6 +5,7 @@ import OnboardNavigator from './OnboardNavigator';
 import MainNavigator from './MainNavigator';
 import {useSelector} from 'react-redux';
 import {RootState} from '../store/store';
+import {Webview} from '@pages';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,7 @@ const Router = () => {
         )}
 
         <Stack.Screen name={'MainNavigator'} component={MainNavigator} />
+        <Stack.Screen name={'WebView'} component={Webview} />
       </Stack.Navigator>
     </NavigationContainer>
   );
