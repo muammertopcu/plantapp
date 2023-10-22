@@ -1,15 +1,23 @@
-import {Dimensions, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   categoryCard: {
-    flex: 0.5,
-    maxWidth: Dimensions.get('window').width / 2 - 16,
+    flex: 1,
     height: 150,
     backgroundColor: '#F4F6F6',
     borderColor: 'rgba(41, 187, 137, 0.18)',
     borderWidth: 0.5,
     borderRadius: 12,
     marginBottom: 11,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 4,
+    shadowRadius: 1,
+    elevation: 1,
   },
   image: {
     height: 150,

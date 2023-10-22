@@ -8,3 +8,5 @@ export {default as GardenIcon} from './GardenIcon';
 export {default as DiagnoseIcon} from './DiagnoseIcon';
 export {default as ProfileIcon} from './ProfileIcon';
 export {default as ScanIcon} from './ScanIcon';
+export {default as Mail} from './Mail';
+export {default as Arrow} from './Arrow';

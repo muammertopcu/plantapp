@@ -1,8 +1,14 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import {Categories, Header} from './Partial';
 
 const Home = () => {
-  return <Text>Home</Text>;
+  return (
+    <SafeAreaView>
+      <Header />
+      <Categories />
+    </SafeAreaView>
+  );
 };
 
 export default Home;

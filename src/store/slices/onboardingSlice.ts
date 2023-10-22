@@ -1,5 +1,5 @@
-import {OnboardingType} from '../../types/sliceTypes';
 import {createSlice} from '@reduxjs/toolkit';
+import {OnboardingType} from '@types';
 
 const initialState: OnboardingType = {
   isOnboarding: true,

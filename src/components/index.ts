@@ -4,3 +4,7 @@ export {default as SelectItemCard} from './SelectItemCard';
 export {default as Searchbar} from './Searchbar';
 export {default as CategoryCard} from './CategoryCard';
 export {default as BrushText} from './BrushText';
+export {default as PremiumBox} from './PremiumBox';
+export {default as GradientText} from './GradientText';
+export {default as QuestionCard} from './QuestionCard';
+export {default as SkeletonCard} from './SkeletonCard';
