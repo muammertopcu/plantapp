@@ -1,13 +1,13 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {View} from 'react-native';
 import {Categories, Header} from './Partial';
 
 const Home = () => {
   return (
-    <SafeAreaView>
+    <View>
       <Header />
       <Categories />
-    </SafeAreaView>
+    </View>
   );
 };
 

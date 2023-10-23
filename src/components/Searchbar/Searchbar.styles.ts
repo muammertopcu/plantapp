@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255, 255, 255, 0.88)',
     paddingLeft: 48,
     paddingRight: 16,
+    paddingVertical: 13,
   },
   icon: {
     position: 'absolute',

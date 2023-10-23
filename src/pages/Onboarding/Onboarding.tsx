@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {SafeAreaView} from 'react-native';
+import {Image, SafeAreaView} from 'react-native';
 import styles from './Onboarding.styles';
 import Swiper from 'react-native-swiper';
 import {FirstStep, SecondStep} from './partials';
@@ -23,6 +23,10 @@ const Onboarding = ({navigation}: OnboardingProps) => {
 
   return (
     <SafeAreaView style={styles.wrapper}>
+      <Image
+        source={require('../../assets/images/onboarding-bg-1.png')}
+        style={styles.imageBg}
+      />
       <Swiper
         ref={swiperRef}
         loop={false}

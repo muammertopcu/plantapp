@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, ImageBackground, Text, View} from 'react-native';
+import {Image, Text, View} from 'react-native';
 import styles from './FirstStep.styles';
 import {BrushText, Button} from '@components';
 
@@ -9,9 +9,7 @@ interface FirstStepProps {
 
 const FirstStep = ({onPress}: FirstStepProps) => {
   return (
-    <ImageBackground
-      style={styles.container}
-      source={require('../../../../assets/images/onboarding-bg-1.png')}>
+    <View style={styles.container}>
       <Text style={styles.title}>
         Take a photo to <BrushText text={'identify'} /> the plant!
       </Text>
@@ -24,7 +22,7 @@ const FirstStep = ({onPress}: FirstStepProps) => {
       <View style={styles.button}>
         <Button text={'Continue'} onPress={onPress} />
       </View>
-    </ImageBackground>
+    </View>
   );
 };
 

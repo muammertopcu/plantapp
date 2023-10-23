@@ -1,8 +1,11 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 
 const BrushTextStyles = StyleSheet.create({
   container: {
-    transform: [{translateY: 8}],
+    transform: [
+      {translateX: Platform.OS === 'ios' ? 25 : 0},
+      {translateY: Platform.OS === 'ios' ? 3 : 10},
+    ],
   },
   text: {
     fontSize: 28,

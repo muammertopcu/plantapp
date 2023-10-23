@@ -19,7 +19,11 @@ const SecondStep = ({onPress}: FirstStepProps) => {
 
       <LinearGradient
         locations={[0, 0.7, 0.9]}
-        colors={['rgba(255,255,255,0)', 'rgba(255,255,255,0)', '#ffffff']}
+        colors={[
+          'rgba(255, 255, 255, 0)',
+          'rgba(255, 255, 255, 0)',
+          'rgb(245,245,245)',
+        ]}
         style={styles.gradient}
       />
 

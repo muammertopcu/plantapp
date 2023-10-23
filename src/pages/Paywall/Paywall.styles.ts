@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').height * 0.5,
   },
   content: {
-    transform: [{translateY: -Dimensions.get('window').height * 0.2}],
+    position: 'absolute',
+    bottom: 20,
   },
   title: {
     color: '#fff',
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
   },
   selectWrapper: {
     paddingHorizontal: 10,
-    paddingTop: 10,
+    paddingTop: '.5%',
   },
   footer: {
     paddingHorizontal: 24,

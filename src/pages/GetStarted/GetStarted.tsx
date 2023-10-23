@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, ImageBackground, Text, View} from 'react-native';
+import {Image, SafeAreaView, Text, View} from 'react-native';
 import {Button} from '@components';
 import styles from './GetStarted.styles';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
@@ -14,9 +14,11 @@ const GetStarted = ({navigation}: GetStartedProps) => {
   };
 
   return (
-    <ImageBackground
-      source={require('../../assets/images/get-started-bg.png')}
-      style={styles.wrapper}>
+    <SafeAreaView style={styles.wrapper}>
+      <Image
+        source={require('../../assets/images/get-started-bg.png')}
+        style={styles.bgImage}
+      />
       <Text style={styles.title}>
         Welcome to <Text style={styles.bold}>PlantApp</Text>
       </Text>
@@ -34,12 +36,12 @@ const GetStarted = ({navigation}: GetStartedProps) => {
         <Button text={'Get Started'} onPress={goToOnboarding} />
 
         <Text style={styles.footerText}>
-          By tapping next, you are agreeing to PlantID{' '}
+          By tapping next, you are agreeing to PlantID{'\n'}
           <Text style={styles.underline}>Term of Use</Text> &{' '}
           <Text style={styles.underline}>Privacy Policy</Text>.
         </Text>
       </View>
-    </ImageBackground>
+    </SafeAreaView>
   );
 };
 

@@ -1,9 +1,14 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
     paddingTop: 12,
+  },
+  bgImage: {
+    position: 'absolute',
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
   },
   title: {
     fontSize: 28,

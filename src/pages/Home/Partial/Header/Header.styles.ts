@@ -1,9 +1,10 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 24,
-    height: 150,
+    height: Dimensions.get('window').height / 4,
+    justifyContent: 'space-around',
   },
   smText: {
     marginVertical: 5,
@@ -22,6 +23,12 @@ const styles = StyleSheet.create({
   },
   searchContainer: {
     marginVertical: 14,
+  },
+  headerBg: {
+    position: 'absolute',
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height / 4,
+    top: 0,
   },
 });
 
