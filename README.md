@@ -56,3 +56,6 @@ npx react-native run-android
 - React Navigation
 - React Native SVG
 - React Native Async Storage
+
+## Screens (GIF)
+![](https://github.com/muammertopcu/plantapp/blob/main/src/assets/screenshots/screens.gif)
